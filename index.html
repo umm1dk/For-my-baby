@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Dihhonscehzwan Baby 💦💗</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <audio id="endingMusic">
+    <source src="ending-music.mp3" type="audio/mpeg">
+</audio>
+
+    <div class="top-buttons">
+        <button onclick="previousPage()">← BACK</button>
+        <button id="musicButton" onclick="toggleMusic()">♫ MUSIC OFF</button>
+    </div>
+
+    <!-- PAGE 1: WELCOME -->
+    <section class="page active" id="page1">
+        <div class="card">
+            <div class="cute-image">
+    <img src="pigeon.jpeg" alt="Cute pigeon">
+    <div>💗</div>
+</div>
+
+            <p class="small-label">A LITTLE SURPRISE FOR YOU 💗</p>
+                <p>(you are a kabootar remember?)</p>
+            <h1>Happy Boyfriend Day, Baby! 💗</h1>
+            <p>(Dihhonschezwan Baby to be exact 💦😋)</p>
+                <p>I made a little something just for you...</p>
+            <button class="pink-button" onclick="nextPage()">
+                Open My Heart 💗
+            </button>
+        </div>
+    </section>
+
+    <!-- PAGE 2: THIS OR THAT -->
+    <section class="page" id="page2">
+        <div class="card">
+            <div class="character">🥰</div>
+            <h2>This or That</h2>
+            <p>Choose your favourite!</p>
+
+            <div class="choice">
+                <button onclick="choose(this)">Cuddles</button>
+                <button onclick="choose(this)">Kisses</button>
+                <p>You would choose both obviously 🥰</p>
+            </div>
+
+            <div class="choice">
+                <button onclick="choose(this)">Texts</button>
+                <button onclick="choose(this)">Calls</button>
+                <p>I love hearing your voice 💗</p>
+            </div>
+
+            <div class="choice">
+                <button onclick="choose(this)">Movie date</button>
+                <button onclick="choose(this)">Long drive</button>
+                <p>Any time with you is special 💕</p>
+            </div>
+
+            <div class="choice">
+                <button onclick="choose(this)">Cute gifts</button>
+                <button onclick="choose(this)">Quality time</button>
+                <p>It's the thought that counts 🥹</p>
+            </div>
+
+            <button class="pink-button" onclick="nextPage()">Next 💗</button>
+        </div>
+    </section>
+
+ <!-- PAGE 3: LOVE QUESTION -->
+<section class="page" id="page3">
+    <div class="card">
+        <div class="character big">🐥</div>
+
+        <p class="small-label">BE HONEST!</p>
+
+        <h2>Do you love me as much as I love you? 💗</h2>
+
+        <div class="love-buttons">
+            <button class="pink-button" onclick="loveAnswer('yes')">
+                Yes, obviously! 💗
+            </button>
+
+            <button class="pink-button no-button" onclick="loveAnswer('no')">
+                Noope (yes obviously)👀
+            </button>
+        </div>
+
+        <p id="answerText" aria-live="polite"></p>
+    </div>
+</section>
+
+
+<!-- PAGE 4: MEMORY GAME -->
+<section class="page" id="page4">
+    <div class="card">
+
+        <div class="character">🧸</div>
+
+        <p class="small-label">A LITTLE GAME FOR YOU</p>
+
+        <h2>Match My Heart 💗</h2>
+
+        <p>Find all the matching pairs!</p>
+
+        <div class="game-board">
+
+    <button class="game-card" onclick="flipCard(this)">?</button>
+
+    <button class="game-card" onclick="flipCard(this)">?</button>
+
+    <button class="game-card" onclick="flipCard(this)">?</button>
+
+    <button class="game-card" onclick="flipCard(this)">?</button>
+
+    <button class="game-card" onclick="flipCard(this)">?</button>
+
+    <button class="game-card" onclick="flipCard(this)">?</button>
+
+</div>
+
+
+        <p id="gameMessage" aria-live="polite">
+            You can do it! 💕
+        </p>
+
+        <button class="pink-button" onclick="resetGame()">
+            Try Again ↻
+        </button>
+
+        <button class="pink-button" onclick="nextPage()">
+            Continue 💗
+        </button>
+
+    </div>
+</section>
+
+
+<!-- PAGE 5: PROMISES -->
+<section class="page" id="page5">
+    <div class="card">
+
+        <div class="character">🧸</div>
+
+        <h2>Our Promises</h2>
+
+        <p>Some little promises from me to you.</p>
+
+        <button class="promise" onclick="promiseClick(this)">
+            💗 Unlimited hugs and Kisses
+        </button>
+
+        <button class="promise" onclick="promiseClick(this)">
+            💗 I will always listen to your yapping
+        </button>
+
+        <button class="promise" onclick="promiseClick(this)">
+            💗 Talk things out, even when it's hard
+        </button>
+
+        <button class="promise" onclick="promiseClick(this)">
+            💗 Support your dreams
+        </button>
+
+        <button class="promise" onclick="promiseClick(this)">
+            💗 Share my food... sometimes (except icecream 👺)
+        </button>
+
+        <button class="promise" onclick="promiseClick(this)">
+            💗 Junk food thodu sa kmm khaungi  😭
+        </button>
+
+        <button class="pink-button" onclick="nextPage()">
+            One Last Thing 💗
+        </button>
+
+    </div>
+</section>
+
+
+
+    <!-- PAGE 6: FINAL MESSAGE -->
+    <section class="page" id="page6">
+        <div class="card">
+            <div class="character big">😼</div>
+            <p class="small-label">A LITTLE REMINDER</p>
+            <h2>Why I Love You 💗?</h2>
+
+            <p class="quote">
+                You make ordinary moments feel special. 
+                Me so happyie happyie when I am with you.
+                You are so goal oriented and prob the reason for my MOTIIIVATION!
+                You are so respectful to me.
+                I'm so happy to have you in my life.
+            </p>
+
+            <button class="pink-button" onclick="showFinalMessage()">
+                Final Message 💌
+            </button>
+            <a
+    class="youtube-button"
+    href="https://youtu.be/yuF7Pw-_YIE"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    🎬 A soundtrack for you💗
+</a>
+
+
+            <p id="finalMessage" aria-live="polite"></p>
+            <button class="text-button" onclick="showPage(1)">
+                Start Again ↻
+            </button>
+        </div>
+    </section>
+
+     <!-- LOAD JAVASCRIPT -->
+      <script src="script.js"></script>
+
+</body>
+</html>
